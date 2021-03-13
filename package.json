@@ -1,0 +1,29 @@
+{
+  "name": "create-hapi-backend",
+  "version": "1.0.0",
+  "description": "A script to create a backend based on Hapi",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jctaveras/create-hapi-backend.git"
+  },
+  "keywords": [
+    "hapi",
+    "backend",
+    "postgres",
+    "sequelize",
+    "typescript"
+  ],
+  "bin": {
+    "create-hapi-backend": "./bin/chb.js"
+  },
+  "author": "Jean Carlos Taveras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jctaveras/create-hapi-backend/issues"
+  },
+  "homepage": "https://github.com/jctaveras/create-hapi-backend#readme"
+}
