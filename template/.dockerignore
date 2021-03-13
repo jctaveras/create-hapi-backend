@@ -1,0 +1,11 @@
+# MAC OS
+.DS_Store
+
+# Remove pacakge-lock.json
+package-lock.json
+
+# Remove node_modules folder
+/node_modules
+
+# Remove build folder
+/dist

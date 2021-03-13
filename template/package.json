@@ -1,0 +1,38 @@
+{
+  "name": "chb-template",
+  "version": "1.0.0",
+  "description": "Create Hapi Backend main template",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "destroy:compose": "docker-compose down",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate:docker": "docker exec -ti server sh -c \"npm run migrate\"",
+    "seed": "npx sequelize db:seed:all",
+    "seed:docker": "docker exec -ti server sh -c \"npm run seed\"",
+    "start": "node ./dist/index.js",
+    "start:compose": "docker-compose up --build",
+    "start:dev": "nodemon index.ts"
+  },
+  "keywords": [
+    "hapi",
+    "backend",
+    "sequelize",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/hapi__hapi": "^20.0.5",
+    "@types/node": "^14.14.34",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ext": ".ts",
+  "ignore": ["node_modules"],
+  "delay": "2",
+  "execMap": {
+    "ts": "ts-node"
+  }
+}
